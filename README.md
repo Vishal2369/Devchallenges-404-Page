@@ -36,7 +36,8 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Desktop preview](https://github.com/Vishal2369/Devchallenges-404-Page/blob/master/images/desktop-preview.png)
+![Mobile preview](https://github.com/Vishal2369/Devchallenges-404-Page/blob/master/images/mobile-preview.png)
 
 A responsive 404 page made with HTML and CSS.
 
