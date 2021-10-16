@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+
+    /* Color */
+    --clr-gray-700 : hsl(0, 0%, 20%);
+    --clr-gray-400 : hsl(0, 0%, 31%);
+    --clr-gray-200 : hsl(0, 0%, 74%);
+
+    --clr-white :    hsl(0, 0%, 100%);
+
+    /* Font */
+    --ff-700 : 3rem;
+    --ff-400 : 1.125rem;
+    --ff-300 : 0.875rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p{
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    position: relative;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: -0.035rem;
+    background-color: var(--clr-white);
+    padding-block: 1.125rem;
+}
+
+h1 {
+    font-size: var(--ff-700);
+    font-weight: 700;
+    color: var(--clr-gray-700);
+}
+
+p {
+    font-size: var(--ff-400);
+    font-weight: 400;
+    color: var(--clr-gray-400);
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: var(--ff-300);
+    color: var(--clr-white);
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--clr-gray-700);
+    padding : 1.7em 3em;
+    transition: transform 300ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+}
+
+.error {
+    width: min(93vw, 75rem);
+    margin: 0 auto;
+}
+
+.error__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.08rem;
+}
+
+.error__container {
+    margin-top: min(10vw, 7.5rem);
+}
+
+.error__heading {
+    margin-top: 4rem;
+}
+
+.error__text {
+    margin-top: 2.5rem;
+    max-width: 23rem;
+}
+
+.btn--error{
+    margin-top: 3rem;
+}
+
+.createdBy {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: var(--ff-300);
+    text-align: center;
+    color: var(var(--clr-gray-200));
+    margin-top: 3rem;
+}
+
+.createdBy__name {
+    font-weight: 700;
+    color: var(--clr-gray-200);
+    text-decoration: underline;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    }
+}
+
+
+/* Desktop Design */
+
+@media screen and (min-width : 90rem) {
+
+    :root {
+        --ff-700 : 4rem;
+        --ff-400 : 1.5rem;
+    }
+
+    .error__container {
+        display: flex;
+    }
+
+    .error__img__container {
+        width: 50%;
+    }
+
+    .error__img {
+        width: 85%;
+    }
+
+    .error__content {
+        width: 50%;
+    }
+    .error__heading {
+        margin-top: 0;
+    }
+
+    .createdBy {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1rem;
+    }
+}
+
+
+
+
+
+
